@@ -1,4 +1,5 @@
 var al = [];
+var al1 = [];
 
 function setup(){
 
@@ -8,6 +9,10 @@ createCanvas(1200,600);
 		al[i] = new alien();
 	}
 	
+
+	for (var i = 0; i < 500; i++) {
+		al1[i] = new alien1();
+	}
 }
 
 function draw(){
@@ -20,6 +25,11 @@ for (var i = 0; i < 500; i++) {
 		al[i].restore();
 	}
 
+for (var i = 0; i < 500; i++) {
+		al1[i].show();
+		al1[i].update();
+		al1[i].restore();
+	}
 
 	
 
