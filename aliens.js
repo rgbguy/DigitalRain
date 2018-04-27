@@ -16,7 +16,7 @@ function alien()
 
 	this.show = function()
 	{
-		fill(255, 204, 0);
+		fill(255);
 		rect(this.x,this.y,0.5,5*this.speedy);
 	}
 

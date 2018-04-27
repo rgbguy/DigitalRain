@@ -1,7 +1,6 @@
 var al = [];
 var col= 100;
-var c= 80;
-var d= 100;
+
 
 function setup()
 {
@@ -16,8 +15,7 @@ createCanvas(windowWidth, windowHeight);
 function draw()
 {
 
-  col = mouseX/3;
-  c,d = mouseY/3;
+ noStroke();
   var random_boolean = Math.random() >= 0.98;
   if (random_boolean) 
   {
@@ -25,7 +23,7 @@ function draw()
   }
   else
   {
-  	  background (100,100,100);
+  	  background (0);
   }
 
 
