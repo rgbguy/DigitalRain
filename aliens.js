@@ -1,4 +1,5 @@
-function alien(){
+function alien()
+{
 
 	this.speedx = 5;
 	this.speedy = 10*random(0,0.5);
@@ -18,7 +19,7 @@ function alien(){
 	}
 
 	this.restore = function(){
-		if(this.y>600){
+		if(this.y>windowHeight){
 			this.y=random(0,-600);
 			this.x=random(-1000,width);
 		}
