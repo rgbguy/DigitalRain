@@ -3,7 +3,7 @@ var al = [];
 
 function setup(){
 
-createCanvas(1200,600);
+createCanvas(windowWidth, windowHeight);
 
 	for (var i = 0; i < 1000; i++) {
 		al[i] = new alien();
