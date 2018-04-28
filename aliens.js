@@ -1,3 +1,5 @@
+var direction = 2;
+
 function alien()
 {
 
@@ -10,13 +12,16 @@ function alien()
 
 	this.update = function()
 	{
+		if (mouseX>width/2) {direction	= (mouseX - width/2)/100;}
+		else{direction	= (mouseX - width/2)/100;}
 		this.y = this.y + this.speedy + 5;
-		this.x = this.x + 2;
+		this.x = this.x + direction	;
 	}
 
 	this.show = function()
 	{
 		fill(255);
+		
 		rect(this.x,this.y,0.5,5*this.speedy);
 	}
 
@@ -25,7 +30,7 @@ function alien()
 		if(this.y>windowHeight)
 		{
 			this.y=random(0,-600);
-			this.x=random(-1000,width);
+			this.x=random(-1000,width+1000);
 		}
 
 	}
